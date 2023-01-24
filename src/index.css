@@ -1,0 +1,350 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url('./assets/fonts/Avenir.ttc');
+}
+
+@font-face {
+  font-family: 'Garde-Bk';
+  src: url('./assets/fonts/Garde/ITCAvantGardePro-Bk.otf');
+}
+
+@font-face {
+  font-family: 'Garde-Bold';
+  src: url('./assets/fonts/Garde/ITCAvantGardePro-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Garde-Demi';
+  src: url('./assets/fonts/Garde/ITCAvantGardePro-Demi.otf');
+}
+
+@font-face {
+  font-family: 'Garde-Md';
+  src: url('./assets/fonts/Garde/ITCAvantGardePro-Md.otf');
+}
+
+.row {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 50%;
+  max-width: 50%;
+}
+
+.column img {
+  width: 100%;
+}
+
+.header {
+  display: block;
+  width: 494px;
+  height: 242px;
+  margin-left: 120px;
+  margin-top: 96px;
+}
+
+.header .header-content {
+  position: sticky;
+  height: 100%;
+  width: 100%;
+}
+
+.header .header-title {
+  font-family: 'Garde-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31.25px;
+  line-height: 130%;
+  color: black;
+}
+
+.header .header-description {
+  width: 432px;
+  height: 52px;
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #666666;
+  margin-top: 12px;
+  margin-bottom: 32px;
+}
+
+.header span {
+  width: 146px;
+  height: 17px;
+
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12.8px;
+  text-transform: capitalize;
+  color: black;
+  padding: 0 0 5px 0;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.product-group {
+  display: flex;
+  position: relative;
+  margin-top: 68px;
+  padding-left: 120px;
+  left: 0%;
+  right: -25.83%;
+  top: 0%;
+  bottom: 0%;
+  height: 363px;
+  overflow-x: scroll;
+  overflow: hidden;
+}
+
+.active-scroll {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(1);
+}
+
+.card {
+  margin-right: 32px;
+  display: grid;
+  max-width: 363px;
+  text-align: center;
+  font-family: arial;
+}
+.card img {
+  width: 230px;
+  height: 310px;
+}
+
+.card .card-title {
+  display: flex;
+
+  width: 230px;
+  height: 20px;
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12.8px;
+  line-height: 160%;
+  color: #000000;
+
+  margin-top: 12px;
+}
+
+.card .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.card .card-footer .card-price {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.8px;
+  line-height: 160%;
+
+  color: #000000;
+}
+
+.elipsis-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  top: 0px;
+  border-radius: 50%;
+  margin-left: 9px;
+}
+
+.ellipsis-main-active {
+  border: 1px solid black;
+}
+
+.ellipsis-normal {
+  position: absolute;
+  right: 0px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.ellipsis-active {
+  position: absolute;
+  right: 0px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.ellipsis-orchid {
+  background-color: #cc9999;
+}
+
+.ellipsis-blue {
+  background-color: #99c3cc;
+}
+
+.ellipsis-purple {
+  background-color: #cb99cc;
+}
+
+.ellipsis-green {
+  background-color: #a6cc99;
+}
+
+.blur {
+  display: none;
+}
+
+@media screen and (max-width: 720px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 437px;
+  }
+
+  .blur {
+    position: absolute;
+    width: 100%;
+    height: 218px;
+    top: 219px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 78.65%);
+    opacity: 0.5;
+    display: block;
+  }
+
+  .header {
+    position: absolute;
+    width: 312px;
+    height: 116px;
+    top: 150px;
+    margin-left: 24px;
+  }
+  .header .header-content {
+    position: sticky;
+    height: 100%;
+    width: 100%;
+  }
+
+  .header span {
+    width: 146px;
+    height: 17px;
+
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12.8px;
+    text-transform: capitalize;
+    color: white;
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+  }
+
+  .header .header-title {
+    font-family: 'Garde-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    /* or 26px */
+
+    /* Typography / White */
+    color: white;
+    margin-bottom: 16px;
+  }
+  .header .header-description {
+    display: none;
+  }
+  .product-group {
+    display: flex;
+    position: relative;
+    margin-top: 178px;
+    padding-left: 24px;
+    left: 0%;
+    right: -25.83%;
+    top: 0%;
+    bottom: 0%;
+    height: 293px;
+    overflow-x: scroll;
+    overflow: hidden;
+  }
+
+  .card {
+    margin-right: 32px;
+    display: grid;
+    max-width: 148px;
+    text-align: center;
+    font-family: arial;
+  }
+  .card img {
+    width: 148px;
+    height: 200px;
+  }
+
+  .card .card-title {
+    display: flex;
+    width: 149px;
+    height: 40px;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 160%;
+    color: #000000;
+    text-align: left;
+    margin-top: 208px;
+  }
+
+  .card .card-footer {
+    position: relative;
+    display: grid;
+    text-align: left;
+    margin-top: 4px;
+    gap: 8px;
+    bottom: 1px;
+  }
+
+  .card .card-footer .card-price {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12.8px;
+    line-height: 160%;
+
+    color: #000000;
+  }
+  .ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    top: 0px;
+    border-radius: 50%;
+    margin-left: 0px;
+    margin-right: 7.2px;
+  }
+}
